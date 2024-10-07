@@ -5,7 +5,6 @@ create a personalized message for each contact, send the message, and record the
 
 import sys
 import os
-import json
 
 # Add the parent directory of the current script to the path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))

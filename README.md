@@ -56,6 +56,7 @@ Here is a brief overview of the project's structure:
 morning_greetings/
 │
 ├── __init__.py                     # Empty
+├── __main__.py                     # 
 ├── main.py                         # Entry point for the greetings menu
 ├── contact_manager.py              # Manage and load contacts
 ├── contacts.py                     # Manage list of friends

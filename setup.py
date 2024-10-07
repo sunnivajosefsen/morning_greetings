@@ -10,7 +10,7 @@ setup(
     author_email="sunniva.josefsen@hotmail.com",
     entry_points={
         'console_scripts': [
-            'morning_greetings=morning_greetings.main:main',  # Point to the main function in main.py
+            'morning_greetings=morning_greetings.__main__:main',  
         ],
     },
 )
