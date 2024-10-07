@@ -1,10 +1,9 @@
 oppdater Readme
-    - usage: morning_greetings
-    - forskjell på main.py og __main__.py? trenger jeg begge? 
+
+
+Last ned pakken og sjekk om jeg får kjørt morning_greetings
 
 2.6
 2.7
-
-Få github opp å nikke
 
 Start på rapport

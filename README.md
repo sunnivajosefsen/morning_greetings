@@ -25,7 +25,12 @@ To get started, follow these steps:
    git clone 
    cd morning_greetings
    ```
-2. **Install the Package**:
+2. **Create a Virtual Environment (Recommended):**
+   ```bash
+   python3 -m venv greetingsenv
+   source greetingsenv/bin/activate  # On Windows, use `gameenv\Scripts\activate`
+   ```
+1. **Install the Package**:
    ```bash
    pip install -e .
    ```
