@@ -59,7 +59,7 @@ class TestContactsManager(unittest.TestCase):
         self.assertEqual(contacts[0]['name'], "Bob")  # Assert first contact is "Bob"
         self.assertEqual(contacts[0]['email'], "bob@example.com")  # Check first email
         self.assertEqual(contacts[1]['name'], "Bob")  # Assert second contact is also "Bob"
-        self.assertEqual(contacts[1]['email'], "bobMarley@example.com")  # Check second email
+        self.assertEqual(contacts[1]['email'], "bobmarley@example.com")  # Check second email
         
     def test_remove_contact(self):
         """Test removing an existing contact."""

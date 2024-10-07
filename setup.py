@@ -8,4 +8,9 @@ setup(
     description="A package to automate sending Good Morning messages",
     author="Sunniva Josefsen",
     author_email="sunniva.josefsen@hotmail.com",
+    entry_points={
+        'console_scripts': [
+            'morning_greetings=morning_greetings.main:main',  # Point to the main function in main.py
+        ],
+    },
 )

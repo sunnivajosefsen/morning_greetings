@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+morning_greetings.egg-info/PKG-INFO
+morning_greetings.egg-info/SOURCES.txt
+morning_greetings.egg-info/dependency_links.txt
+morning_greetings.egg-info/entry_points.txt
+morning_greetings.egg-info/top_level.txt
+tests/__init__.py
+tests/test_contacts.py
+tests/test_contacts_manager.py
+tests/test_logger.py
+tests/test_message_generator.py
+tests/test_message_sender.py

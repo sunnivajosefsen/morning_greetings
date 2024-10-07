@@ -25,12 +25,7 @@ To get started, follow these steps:
    git clone 
    cd morning_greetings
    ```
-2. **Create a Virtual Environment** (recommended):
-   ```
-   python3 -m venv morning_greetings_env
-   source morning_greetings_env/bin/activate  # On Windows, use `morning_greetings_env\Scripts\activate`
-   ```
-3. **Install the Package**:
+2. **Install the Package**:
    ```bash
    pip install -e .
    ```
@@ -40,7 +35,7 @@ Once installed, you can start the program by running the following command in yo
 ```bash
 morning_greetings
 ```
-This will launch a menu where you can choose between the ... available options:
+This will launch a menu where you can choose between the 8 available options:
 1. **Add Contact**
 2. **Remove Contact**
 3. **Update Contact**
@@ -86,15 +81,8 @@ morning_greetings/
 
 ## run the package locally
 
-install the package:
-pip install .
-
 Run the script manually:
 python main.py
-
-Optionally, run unit tests:
-python -m unittest discover tests
-
 
 ## Run tests
 

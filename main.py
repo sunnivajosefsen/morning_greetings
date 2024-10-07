@@ -1,5 +1,5 @@
 """
-Main script that integrates all the modules. The script performes the entirea utomation process: manage the contact list, 
+Main script that integrates all the modules. The script performes the entire automation process: manage the contact list, 
 create a personalized message for each contact, send the message, and record the operation in a log.
 """
 
