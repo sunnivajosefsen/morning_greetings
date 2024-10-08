@@ -9,7 +9,6 @@
   - [Usage](#usage)
   - [Project Structure](#project-structure)
     - [Key Files:](#key-files)
-  - [run the package locally](#run-the-package-locally)
   - [Run tests](#run-tests)
 
 ## Features
@@ -38,7 +37,7 @@ To get started, follow these steps:
 Once installed, you can start the program by running the following command in your terminal:
 
 ```bash
-morning_greetings
+python main.py
 ```
 This will launch a menu where you can choose between the 8 available options:
 1. **Add Contact**
@@ -85,23 +84,19 @@ morning_greetings/
 - **`message_sender.py`**: Simulates sending messages to friends.
 - **`logger.py`**: Logs sent and planned messages with timestamps in log files.
 
-## run the package locally
-
-Run the script manually:
-python main.py
-
 ## Run tests
-
 You can run all the tests by executing the following command from the package root directory:
 
+```bash
 python -m unittest discover tests
+```
 
-
-This will automatically discover and run all the test files (test_contacts.py, test_message_generator.py, test_message_sender.py, and test_logger.py).
+This will automatically discover and run all the test files (test_contacts.py, test_message_generator.py, test_message_sender.py, test_contacts_manager.py and test_logger.py).
 
 These tests ensure that:
-
-The generate_message function generates correct messages.
-The send_message function works as expected and handles missing email addresses.
-The log_message function writes the correct information to the log file.
+- The contacts function add, remove, update and retrieving contacts name, preferred greeting time and contact information. 
+- The contacts_manager function manage te contacts in a structured way. 
+- The generate_message function generates correct messages.
+- The send_message function works as expected and handles missing email addresses.
+- The log_message function writes the correct information to the log file.
 
