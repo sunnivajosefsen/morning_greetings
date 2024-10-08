@@ -22,7 +22,7 @@ To get started, follow these steps:
 1. **Clone the Repository** (or download the package):
    ```bash
    git clone 
-   cd ACIT4420-Problem-solving-with-scripting
+   cd morning_greetings
    ```
 2. **Create a Virtual Environment (Recommended):**
    ```bash
