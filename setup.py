@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Assignment_morning_greetings",
+    name="morning_greetings",
     version="0.1",
     packages=find_packages(),
     install_requires=[],
@@ -10,7 +10,7 @@ setup(
     author_email="sunniva.josefsen@hotmail.com",
     entry_points={
         'console_scripts': [
-            'morning_greetings=morning_greetings.__main__:main',  
+            'morning_greetings=__main__:main',  
         ],
     },
 )
