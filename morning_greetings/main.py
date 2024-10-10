@@ -6,12 +6,9 @@ create a personalized message for each contact, send the message, and record the
 import sys
 import os
 
-# Add the parent directory of the current script to the path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import morning_greetings.logger as log
-import message_generator as msg_g
-import message_sender as msg_s
+from morning_greetings.logger import log_message
+from morning_greetings.message_generator import generate_message
+from morning_greetings.message_sender import calculate_time
 from morning_greetings.contacts_manager import ContactsManager
 
 def display_menu():
@@ -75,16 +72,16 @@ def main():
             for contact in contacts:
                 name = contact['name']
                 email = contact['email']  # Ensure 'contact_info' matches your data structure
-                message = msg_g.generate_message(name)  # Generate the "Good Morning" message
+                message = generate_message(name)  # Generate the "Good Morning" message
                 preferred_time = contact['preferred_time']  # Get the preferred time
 
                 try:
                     # Simulate sending the message at the preferred time
-                    action = msg_s.calculate_time(contact, message, preferred_time)
+                    action = calculate_time(contact, message, preferred_time)
                     log_file_name = f"{action}_messages_log.txt"  # Log based on whether the message was sent or planned
 
                     # Log the message (either in planned_messages_log.txt or sent_messages_log.txt)
-                    log.log_message(contact, message, preferred_time=None, log_file=log_file_name)
+                    log_message(contact, message, preferred_time=None, log_file=log_file_name)
 
                 except ValueError as e:  # Handle any errors that occur during message sending
                     print(f"Error sending message to {name}: {e}")

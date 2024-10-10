@@ -14,5 +14,3 @@ setup(
         ],
     },
 )
-
-#'morning_greetings=morning_greetings.__main__:main'

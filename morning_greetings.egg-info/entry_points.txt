@@ -1,2 +1,2 @@
 [console_scripts]
-morning_greetings = __main__:main
+morning_greetings = morning_greetings.main:main
