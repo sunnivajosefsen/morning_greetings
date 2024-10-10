@@ -37,7 +37,7 @@ To get started, follow these steps:
 Once installed, you can start the program by running the following command in your terminal:
 
 ```bash
-python main.py
+morning_greetings
 ```
 This will launch a menu where you can choose between the 8 available options:
 1. **Add Contact**
@@ -54,14 +54,14 @@ Here is a brief overview of the project's structure:
 ```
 morning_greetings/
 │
-├── __init__.py                     # Empty
-├── __main__.py                     # 
-├── main.py                         # Entry point for the greetings menu
-├── contact_manager.py              # Manage and load contacts
-├── contacts.py                     # Manage list of friends
-├── logger.py                       # Log sent messages
-├── message_generator.py            # Generate personalized messages
-├── message_sender.py               # Simulate sending messages
+├──morning_greetings/
+│   ├── main.py                         # Entry point for the greetings menu
+│   ├── contact_manager.py              # Manage and load contacts
+│   ├── contacts.py                     # Manage list of friends
+│   ├── logger.py                       # Log sent messages
+│   ├── message_generator.py            # Generate personalized messages
+│   ├── message_sender.py               # Simulate sending messages
+│   ├── __init__.py                     # Empty
 ├── tests/
 │   ├── __init__.py                 # Empty
 │   ├── test_contacts.py            # Unit tests for contacts.py
@@ -88,7 +88,7 @@ morning_greetings/
 You can run all the tests by executing the following command from the package root directory:
 
 ```bash
-python -m unittest discover tests
+python test.py
 ```
 
 This will automatically discover and run all the test files (test_contacts.py, test_message_generator.py, test_message_sender.py, test_contacts_manager.py and test_logger.py).

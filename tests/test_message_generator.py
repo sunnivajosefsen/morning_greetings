@@ -7,7 +7,7 @@ import sys
 # Dynamically add the project root directory to sys.path for imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from message_generator import generate_message  # Importing the generate_message function from the message_generator module
+from morning_greetings.message_generator import generate_message  # Importing the generate_message function from the message_generator module
 
 class TestMessageGenerator(unittest.TestCase):
     """Unit test class to test the message generation functionality."""

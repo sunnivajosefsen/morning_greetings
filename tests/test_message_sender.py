@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import the calculate_time function from the message_sender module.
-from message_sender import calculate_time
+from morning_greetings.message_sender import calculate_time
 
 class TestMessageSender(unittest.TestCase):
 
