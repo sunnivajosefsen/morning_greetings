@@ -9,10 +9,10 @@ import os
 # Add the parent directory of the current script to the path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-import logger as log
+import morning_greetings.logger as log
 import message_generator as msg_g
 import message_sender as msg_s
-from contacts_manager import ContactsManager
+from morning_greetings.contacts_manager import ContactsManager
 
 def display_menu():
     """Display the menu options to the user."""

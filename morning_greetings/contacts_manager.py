@@ -9,7 +9,7 @@ Contacts class (presumed to be defined in the contacts.py file).
 
 import json
 import os
-from contacts import Contacts
+from morning_greetings.contacts import Contacts
 
 
 # Run this module as a single file?:

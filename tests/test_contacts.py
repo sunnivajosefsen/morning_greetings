@@ -7,7 +7,7 @@ import os
 # Dynamically add the project root directory to sys.path for imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from contacts import Contacts  # Importing the Contacts class for testing
+from morning_greetings.contacts import Contacts  # Importing the Contacts class for testing
 
 class TestContacts(unittest.TestCase):
     def setUp(self):

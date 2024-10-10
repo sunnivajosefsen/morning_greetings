@@ -7,7 +7,7 @@ import sys
 # Dynamically add the project root directory to sys.path for imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from logger import log_message  # Importing the log_message function to test
+from morning_greetings.logger import log_message  # Importing the log_message function to test
 
 
 class TestLogger(unittest.TestCase):

@@ -6,7 +6,7 @@ Module to simulate sending the messages to each friend.
 
 import time # Importing time to simulate delays in sending messages
 from datetime import datetime # Importing datetime to handle current and preferred times for sending
-import logger as log # Importing the logger module to log the messages sent or planned
+import morning_greetings.logger as log # Importing the logger module to log the messages sent or planned
 
 
 def calculate_time(contact, message, preferred_time=None):
